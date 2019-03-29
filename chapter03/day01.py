@@ -29,5 +29,12 @@ def CAMP():
 
 if __name__ == '__main__':
     # 优化算法， 给定目标函数和约束条件选择最佳的投资组合
-    print(optimize.fmin(my_f, 5))
+    #print(optimize.fmin(my_f, 5))
+    data = pd.read_csv('000032.csv')
+    # 统计各个类别分类的数目
+    print(data['close'].value_counts())
+    #　各个类别的统计信息
+    print(data.info())
+    print(data.describe())
+    #
 

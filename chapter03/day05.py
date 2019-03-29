@@ -160,4 +160,7 @@ def Pastor_Stambaugh():
     x2 = np.sign(np.array(final.ret[:-1]-final.Rf[:-1]))*np.array(final.dollar_vol[:-1])
     y = final.ret[1:] - final.Rf[1:]
 if __name__ == '__main__':
-    Pastor_Stambaugh()
+    #Pastor_Stambaugh()
+
+    df = pd.read_pickle('/home/mars/Data/MonthlyROFA.pkl')
+    print(df[df.index=='CPI'])
