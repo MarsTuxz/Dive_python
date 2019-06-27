@@ -49,7 +49,7 @@ def for_dict():
 列表的一些常用的操作
 '''
 def for_list():
-    _list = ['1', 'fa', 'yuan', {'one': 'mars', 'two': 'lily'}]
+    _list = ['1', 'fa', 'yuan', ['tu', 'chen'], {'one': 'mars', 'two': 'lily'}]
     # 反转列表
     _list.reverse()
     print(_list)
@@ -63,6 +63,10 @@ def for_list():
     # 测试数据是否存在
     print('fa' in _list)
     print('fato' not in _list)
+    print('****')
+    for one in _list:
+        print(one)
+        print('tu' in one)
 
     # 删除一个值
     _list.remove('fa')
@@ -71,6 +75,9 @@ def for_list():
     print(_list)
 
 if __name__ == '__main__':
+
+
+
     print(calendar.THURSDAY)
     result = [one**2 for one in [1,2,3,4,5]]
     print(result)
